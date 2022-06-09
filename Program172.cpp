@@ -1,0 +1,27 @@
+
+#include<iostream>
+
+using namespace std;
+
+void Display(char str[])//str mhatla ki 100 milto,*str mhtla tr H ghto
+{
+	
+	while(*str != '\0')
+	{
+		cout<<*str<<endl;
+		str++;
+	}
+
+}
+
+int main()
+{
+	char Arr[20];
+	
+	cout<<"Enter string"<<endl;
+	cin.getline(Arr,20);//std input device
+	
+	Display(Arr);
+	
+	return 0;
+}
